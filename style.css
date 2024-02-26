@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    position: relative;
+}
+nav{
+    background-color: #164863;
+    position: fixed;
+    z-index: 99; 
+    width: 100vw;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: relative;
+    height: 10vh;
+    align-items: center;
+}
+.nav-links li a{
+    padding: 0 30px;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: wheat;
+}
+.nav-links li:hover a{
+    color: #549cc4;
+}
+nav img{
+    position: absolute;
+    height: 8vh;
+    left: 10%;
+    top: 2%;
+    cursor: pointer;
+}
+section{
+    height: 80vh;
+}
+section:nth-child(odd)
+{
+    background-color: #427D9D;
+}
+section:nth-child(even)
+{
+    background-color: #9BBEC8;
+}
+/* about section styling  */
+.about{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.details{
+    width: 60%;
+    text-align: justify;
+    padding: 20px 80px;
+    position: relative;
+    top: 15%;
+    left: 7%;
+    /* border: 1px solid; */
+    transform: translateY(-15%);
+}
+.details h2{
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+.details p{
+    padding: 20px 0;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 30px;
+}
+.profile-img{
+    width: 40%;
+    display: flex;
+    border-radius: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+.profile-img img{
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}
+/* skills section styling */
+.skills h1{
+    text-align: center;
+    position: relative;
+    top: 12%;
+    font-size: 2rem;
+    color: #164863;
+    font-family: 'Courier New', Courier, monospace;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 8%;
+    padding: 50px;
+}
+.skill-div{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 30px 20px;
+    background-color: #427D9D;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+
+.cpp,.java,.html,.react{
+    background: linear-gradient(to right, #4CAF50 75%, #427D9D 25%);
+}
+.c,.express,.git{
+    background: linear-gradient(to right, #424de6 50%, #427D9D 50%);
+}
+.bootstrap,.node,.mongodb{
+    background: linear-gradient(to right, #af4c86 60%, #427D9D 50%);
+}
+.javascript,.css,.react{
+    background: linear-gradient(to right, #cc730c 80%, #427D9D 50%);
+}
+
+/* projects section styling  */
+.projects{
+    height: 850px;
+}
+.projects h1{
+    text-align: center;
+    position: relative;
+    top: 8%;
+    font-size: 2rem;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    top: 15%;
+    justify-content: center;
+}
+.project-div{
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid; */
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #af4c86;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+.project-box{
+    font-size: 2rem;
+    position: absolute;
+}
+.project-div:hover{
+    box-shadow: 0 0 10px 5px black;
+}
+.project-box{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+.project-box h3{
+    position: relative;
+    left: 20px;
+    font-size: 2rem;
+    display: inline;
+}
+.project-box a{
+    position: relative;
+    left: 20px;
+    top: 30px;
+    text-decoration: none;
+    color: white;
+}
+.project-div:hover .project-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(to bottom, rgb(150, 7, 7) , rgb(60, 60, 173));
+}
+.project-div .project-box a:hover,h3:hover{
+    color: wheat;
+    text-shadow: 0 0 5px white;
+}
+.project-div img{
+    max-height: 100%;
+    max-height: 100%;
+    max-width: 250px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* certificates section styling */
+.certificates{
+    height: 100vh;
+}
+.certificates h1{
+    text-align: center;
+    position: relative;
+    top: 12%;
+    font-size: 2rem;
+    color: #164863;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 18%;
+}
+.image,.image img{
+    height: 500px;
+    width: 800px;
+}
+.inner-container button{
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #164863;
+    color:  wheat;
+}
+#left-arrow{
+    position: relative;
+    margin-right: 100px;
+}
+#right-arrow{
+    position: relative;
+    margin-left: 100px;
+}
+
+/* resume section styling */
+.resume{
+    height: 800px;
+}
+.resume h1{
+    text-align: center;
+    position: relative;
+    top: 12%;
+    font-size: 2rem;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}
+.file{
+    border: 1px solid;
+    height: 600px;
+    width: 500px;
+    position: relative;
+    top: 18%;
+    left: calc(50% - 250px);
+}
+.file iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* education section styling */
+.education{
+    height: 750px;
+}
+.education h1{
+    text-align: center;
+    position: relative;
+    top: 8%;
+    font-size: 2rem;
+    color: #164863;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inner-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10%;
+    border: 5px dotted #164863;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px 10px 10px 5px;
+    padding: 40px 50px;
+}
+.inner-box h3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: rgb(15, 38, 139);
+    font-family: 'Courier New', Courier, monospace;
+}
+.inner-box p{
+    font-size: 1.2rem;
+    padding: 5px;
+    color: rgb(61, 29, 202);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: bold;
+}
+.clg,.inter,.ssc{
+    margin-bottom: 20px;
+}
+
+/* footer seaction styling */
+footer{
+    height: 400px;
+    background-color: #427D9D;
+}
+footer .links ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: relative;
+    height: 10vh;
+    align-items: center;
+    top: 30px;
+}
+footer .links ul li{
+    padding: 10px 30px;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    color: wheat;
+}
+footer .links ul li:hover{
+    color: #5f1aad;
+    box-shadow: 0 0 10px #5f1aad;
+}
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    top: 15%;
+}
+.form-group{
+    display: flex;
+    padding: 10px 20px;
+}
+.form-group label{
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+}
+input{
+    font-size: 1.5rem;
+    width: 80%;
+}
+.footer-form button{
+    width:30%;
+    position: relative;;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+}
