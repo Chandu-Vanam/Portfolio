@@ -95,7 +95,7 @@ section:nth-child(even)
 .profile-img img{
     border-radius: 50%;
     height: 50%;
-    width: 50%;
+    width: 55%;
 }
 /* skills section styling */
 .skills h1{
